@@ -1,29 +1,144 @@
-body{
+body {
     font-family: "Yugion", serif;
     background-image: url(../imagem/fundo-site.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
-}
-
-.cabecalho{
-    border-color:  aqua;
     display: flex;
     justify-content: center;
-}
-
-.cabecalho .título{
+    flex-direction: column;
+    min-height: 100px;
+    gap: 20px;
+  }
+  
+  .cabecalho {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cabecalho .titulo {
     color: #f1ecff;
-}
-
-.cartao{
+  }
+  
+  .cartao {
     opacity: 0;
-}
-
-.cartao.selecionado{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 5px;
+    position: absolute;
+  }
+  
+  .cartao.selecionado {
     opacity: 1;
-}
+    z-index: 1;
+  }
+  
+  .lista-personagens {
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    position: relative;
+  }
 
-.lista-personagens{
-    background-color: blue;
-}
+  .slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+  }
+
+  .cartao.nome{
+    font-size: 13px;
+    padding: 5px;
+    text-transform: uppercase;
+    background-color: radial-gradient(circle, #f3e2c8,#e4cfa5,#c4a57a);
+    border: 2px solid #a67c52;
+    border-radius: 4px;
+  }
+
+  .cartao.estrela{
+    width: 20px;
+    height: 20px;
+    background-image: url(../imagem/nivel-carta.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+  }
+
+  .cartao.nivel-cata{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    gap: 5px;
+  }
+
+  .cartao.imagem-carta{
+    max-width: 260px;
+    align-self: center;
+  }
+
+  .cartao.informacao{
+    border-radius:5px;
+    max-width: 300px;
+    color: #0000;
+    background-color: radial-gradient(circle, #f3e2c8,#e4cfa5,#c4a57a);
+    border: 2px solid #a67c52;
+    text-align: left;
+    line-height: 1.5;
+    padding: 5px;
+  }
+
+  .cartao.informacao.descricao{
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    padding: 10px;
+  }
+
+  .cartao.informacao.informacao.ataque{
+    span{
+        font-size: 13px
+    }
+  }
+
+  .cartao.informacao.descricao{
+    border-bottom: 1px solid #000000;
+    padding: 10px;
+    max-height: 95px;
+    overflow-y: scroll;
+    font-size: 13px;
+  }
+
+  .fundo-1{
+    background: url(../imagem/fundo-1.jpg);
+
+  }
+  .fundo-2{
+    background: url(../imagem/fundo-2.jpg);
+    
+  }
+
+  .btn-seta{
+    background-color: #f1ecff;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 0px;
+
+  }
+
+  .btn-seta.btn-voltar{
+    transform: rotate(100deg);
+  }
+
+  .btn-seta:houver{
+    background-color: #8351fe;
+  }
+
