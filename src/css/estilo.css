@@ -1,0 +1,29 @@
+body{
+    font-family: "Yugion", serif;
+    background-image: url(../imagem/fundo-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.cabecalho{
+    border-color:  aqua;
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho .título{
+    color: #f1ecff;
+}
+
+.cartao{
+    opacity: 0;
+}
+
+.cartao.selecionado{
+    opacity: 1;
+}
+
+.lista-personagens{
+    background-color: blue;
+}
